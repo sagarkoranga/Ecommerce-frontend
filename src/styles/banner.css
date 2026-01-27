@@ -1,0 +1,78 @@
+.banner-swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.banner-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slide img {
+  justify-self: center;
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.banner-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  transition: transform 0.3s ease;
+  width: 50%;
+  justify-self: center;
+  
+  
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  
+}
+
+.testimonial-content {
+  padding: 12px 15px ;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0 5px 0;
+}
+
+.testimonial-message {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

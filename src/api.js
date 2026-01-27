@@ -1,0 +1,31 @@
+import axios from "axios";
+
+ export const api = axios.create({
+  baseURL: "http://localhost:3000",
+});
+
+api.interceptors.request.use((config) => {
+  const Token = localStorage.getItem("Token");
+  if (Token) {
+    config.headers.Authorization = `Bearer ${Token}`;
+  }
+  return config;
+});
+export const getOrderSummary = () => api.get("/orders/summary");
+export const placeOrder = () =>
+  api.post("/orders/place");
+export const getAllOrders = () => api.get("/orders/my");
+
+export const getCategoryTree = () => api.get("/categories");
+export const getProductsByCategory = (id) =>
+  api.get(`/products/category/${id}`);
+
+export const getProductById = (id) =>
+  api.get(`/products/${id}`);
+
+export const addToCart = (productId, quantity ) =>
+  api.post("/cart/add", { productId, quantity });
+
+export const getBestSellers = () => api.get("/products/bestsellers");
+export const getMyOrders = () => api.get("/orders/my");
+
