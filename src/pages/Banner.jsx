@@ -9,13 +9,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { api } from "../api";
 
 export default function Banner() {
   const [banners, setBanners] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${API_URL}/banners/public`)
+    api
+      .get("/banners/public")
       .then(res => setBanners(res.data));
   }, []);
 
