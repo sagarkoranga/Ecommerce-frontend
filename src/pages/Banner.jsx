@@ -15,7 +15,7 @@ export default function Banner() {
 
   useEffect(() => {
     axios
-      .get("https://ecommerce-backend-alnr.onrender.com/banners/public")
+      .get(`${API_URL}/banners/public`)
       .then(res => setBanners(res.data));
   }, []);
 
