@@ -20,7 +20,7 @@ export default function Register() {
     formData.append("image", image); // <-- actual file
 
     try {
-      const res = await api.post(`${API_URL}/customer/register`, formData, {
+      const res = await api.post(`/customer/register`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
