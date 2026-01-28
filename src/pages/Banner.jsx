@@ -35,7 +35,7 @@ export default function Banner() {
     slidesPerView={1}
     breakpoints={{
       640: {
-        slidesPerView: 2, // tablet
+        slidesPerView: 2, 
       },
       1024: {
         slidesPerView: 4, 
