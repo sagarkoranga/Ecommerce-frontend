@@ -20,7 +20,7 @@ export default function Register() {
     formData.append("image", image); // <-- actual file
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/customer/register`, {
+      const res = await fetch(`${API_URL}/customer/register`, {
         method: "POST",
         body: formData, 
       });
