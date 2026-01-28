@@ -15,7 +15,7 @@ export default function BestsellerBanner() {
   const navigate=useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/products/bestsellers")
+    axios.get("https://ecommerce-backend-alnr.onrender.com/products/bestsellers")
       .then(res => setProducts(res.data))
       .catch(err => console.log(err));
   }, []);
@@ -45,7 +45,7 @@ export default function BestsellerBanner() {
               {Array.isArray(p.images) && p.images.length > 0 && (
                 <img
                  onClick={() => navigate(`/products/${p.id}`)}
-                  src={`http://localhost:3000${p.images[0]}`}
+                  src={`https://ecommerce-backend-alnr.onrender.com${p.images[0]}`}
                   alt={p.title}
                   className="w-full h-52 object-cover rounded-md mb-2"
                 />

@@ -15,7 +15,7 @@ export default function Banner() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/banners/public")
+      .get("https://ecommerce-backend-alnr.onrender.com/banners/public")
       .then(res => setBanners(res.data));
   }, []);
 
@@ -48,7 +48,7 @@ export default function Banner() {
         <div className="banner-slide ">
           <img
             className="rounded-lg w-full h-56 object-cover"
-            src={`http://localhost:3000${banner.image}`}
+            src={`https://ecommerce-backend-alnr.onrender.com${banner.image}`}
             alt={banner.title}
           />
       

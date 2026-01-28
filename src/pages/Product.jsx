@@ -58,7 +58,7 @@ export default function ProductDetails() {
 
         {selectedImage && (
           <img
-            src={`http://localhost:3000${selectedImage}`}
+            src={`https://ecommerce-backend-alnr.onrender.com${selectedImage}`}
             alt={product.title}
             width="350"
             style={{ border: "1px solid #ddd", marginBottom: "10px" }}
@@ -70,7 +70,7 @@ export default function ProductDetails() {
             product.images.map((img, i) => (
               <img
                 key={i}
-                src={`http://localhost:3000${img}`}
+                src={`https://ecommerce-backend-alnr.onrender.com${img}`}
                 width="70"
                 style={{
                   cursor: "pointer",

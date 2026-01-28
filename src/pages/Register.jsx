@@ -20,7 +20,7 @@ export default function Register() {
     formData.append("image", image); // <-- actual file
 
     try {
-      const res = await fetch("http://localhost:3000/customer/register", {
+      const res = await fetch("https://ecommerce-backend-alnr.onrender.com/customer/register", {
         method: "POST",
         body: formData, 
       });

@@ -11,7 +11,7 @@ export default function Login() {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const res = await fetch("http://localhost:3000/customer/login", {
+    const res = await fetch("https://ecommerce-backend-alnr.onrender.com/customer/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

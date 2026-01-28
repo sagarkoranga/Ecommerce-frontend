@@ -16,7 +16,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/testimonials/public")
+      .get("https://ecommerce-backend-alnr.onrender.com/testimonials/public")
       .then(res => settestimonial(res.data));
   }, []);
 
@@ -50,7 +50,7 @@ export default function Testimonials() {
            <div className="rounded-lg px-20 pt-10">
             <img
               className="testimonial-img  "
-              src={`http://localhost:3000${t.image}`}
+              src={`https://ecommerce-backend-alnr.onrender.com${t.image}`}
               alt={t.name}
             /></div>
 

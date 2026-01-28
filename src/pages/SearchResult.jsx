@@ -57,7 +57,7 @@ export default function Search() {
             >
               {p.images?.[0] && (
                 <img
-                  src={`http://localhost:3000${p.images[0]}`}
+                  src={`https://ecommerce-backend-alnr.onrender.com${p.images[0]}`}
                   alt={p.title}
                   className="h-40 w-full object-cover rounded mb-3"
                 />

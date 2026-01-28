@@ -7,7 +7,7 @@ export default function MapPage() {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/contact")
+    axios.get("https://ecommerce-backend-alnr.onrender.com/contact")
       .then(res => setContacts(res.data));
   }, []);
 

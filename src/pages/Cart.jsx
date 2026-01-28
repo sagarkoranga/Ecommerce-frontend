@@ -55,7 +55,7 @@ export default function Cart() {
               {cart.map(item => {
                 const image =
                   item.product.images?.length > 0
-                    ? `http://localhost:3000${item.product.images[0]}`
+                    ? `https://ecommerce-backend-alnr.onrender.com${item.product.images[0]}`
                     : null;
 
                 return (

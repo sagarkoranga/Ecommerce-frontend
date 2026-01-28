@@ -53,8 +53,8 @@ export default function Navbar() {
 
 const user = JSON.parse(localStorage.getItem("user")) || {};
 const userImage = user.image
-  ? `http://localhost:3000${user.image}`
-  : "http://localhost:3000/uploads/profile/default.png";
+  ? `https://ecommerce-backend-alnr.onrender.com${user.image}`
+  : "https://ecommerce-backend-alnr.onrender.com/uploads/profile/default.png";
 
   return (
     <>

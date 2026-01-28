@@ -7,7 +7,7 @@ export default function Contact() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/contact/active")
+      .get("https://ecommerce-backend-alnr.onrender.com/contact/active")
       .then(res => setContacts(res.data))
       .catch(err => console.error(err))
       .finally(() => setLoading(false));

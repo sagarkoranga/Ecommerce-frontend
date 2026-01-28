@@ -33,7 +33,7 @@ export default function CategoryProducts() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "5px" }}>
           {products.map(p => {
             const firstImage = Array.isArray(p.images) && p.images.length > 0
-              ? `http://localhost:3000${p.images[0]}`
+              ? `https://ecommerce-backend-alnr.onrender.com${p.images[0]}`
               : null;
 
             return (
