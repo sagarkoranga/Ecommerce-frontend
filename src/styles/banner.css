@@ -77,7 +77,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.flow-container {
+/* .flow-container {
   overflow: hidden;
   background: #111;
   color: #fff;
@@ -103,4 +103,4 @@
   to {
     transform: translateX(-50%);
   }
-}
+} */
