@@ -23,39 +23,55 @@ export default function Banner() {
   if (!banners.length) return null;
 
   return (
-  <Swiper
-    modules={[Autoplay, Pagination, Navigation]}
-    autoplay={{
-      delay: 1000,
-      disableOnInteraction: false,
-    }}
-    pagination={{ clickable: true }}
-    navigation
-    loop
-    spaceBetween={15}
-    slidesPerView={1}
-    breakpoints={{
-      640: {
-        slidesPerView: 2, 
-      },
-      1024: {
-        slidesPerView: 4, 
-      },
-    }}
-    className="banner-swiper"
-  >
-    {banners.map((banner) => (
-      <SwiperSlide key={banner.id}>
-        <div className="banner-slide ">
-          <img
-            className="rounded-lg w-full h-56 object-cover"
-            src={`https://ecommerce-backend-alnr.onrender.com${banner.image}`}
-            alt={banner.title}
-          />
+  // <Swiper
+  //   modules={[Autoplay, Pagination, Navigation]}
+  //   autoplay={{
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //   }}
+  //   pagination={{ clickable: true }}
+  //   navigation
+  //   loop
+  //   spaceBetween={15}
+  //   slidesPerView={1}
+  //   breakpoints={{
+  //     640: {
+  //       slidesPerView: 2, 
+  //     },
+  //     1024: {
+  //       slidesPerView: 4, 
+  //     },
+  //   }}
+  //   className="banner-swiper"
+  // >
+  //   {banners.map((banner) => (
+  //     <SwiperSlide key={banner.id}>
+  //       <div className="banner-slide ">
+  //         <img
+  //           className="rounded-lg w-full h-56 object-cover"
+  //           src={`https://ecommerce-backend-alnr.onrender.com${banner.image}`}
+  //           alt={banner.title}
+  //         />
       
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
-);
+  //       </div>
+  //     </SwiperSlide>
+  //   ))}
+  // </Swiper>
+
+   <div className="flow-container">
+      <div className="flow-track">
+        <span>🔥 Big Sale</span>
+        <span>🚚 Free Delivery</span>
+        <span>💳 Easy Payments</span>
+        <span>⭐ New Arrivals</span>
+
+        {/* duplicate for seamless loop */}
+        <span>🔥 Big Sale</span>
+        <span>🚚 Free Delivery</span>
+        <span>💳 Easy Payments</span>
+        <span>⭐ New Arrivals</span>
+      </div>
+    </div>
+ );
+
 }

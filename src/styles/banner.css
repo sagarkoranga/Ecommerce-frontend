@@ -76,3 +76,31 @@
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.flow-container {
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  padding: 16px 0;
+}
+
+.flow-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: flow 20s linear infinite;
+}
+
+.flow-track span {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+@keyframes flow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
