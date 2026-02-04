@@ -88,7 +88,7 @@
   display: flex;
   gap: 40px;
   width: max-content;
-  animation: flow 20s linear infinite;
+  animation: flow 5s linear infinite;
 }
 
 .flow-track span {
