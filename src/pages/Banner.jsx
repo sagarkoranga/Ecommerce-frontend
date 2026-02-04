@@ -26,7 +26,7 @@ export default function Banner() {
   <Swiper
     modules={[Autoplay, Pagination, Navigation]}
     autoplay={{
-      delay: 300,
+      delay: 100,
       disableOnInteraction: false,
     }}
     pagination={{ clickable: true }}
